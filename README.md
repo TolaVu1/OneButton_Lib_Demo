@@ -46,6 +46,13 @@ platformio run --target upload
 ## Cấu hình trong `platformio.ini`
 
 ```
+[env]
+platform = espressif32
+framework = arduino
+monitor_speed = 115200
+upload_speed = 921600
+lib_deps = mathertel/OneButton@^2.6.1
+
 [env:esp32doit-devkit-v1]
 board = esp32doit-devkit-v1
 build_flags = 
