@@ -24,7 +24,7 @@
 Kết nối phần cứng theo các pin đã được khai báo trong tệp `platformio.ini`:
 - **BTN_PIN**: Pin 17 được kết nối với nguồn 3.3V qua điện trở kéo lên 10kΩ.
 - **LED_PIN**: Đèn LED trên bo mạch.
-- **LED_PIN_2**: Pin 4 được kết nối với LED bên ngoài.
+- **LED_PIN_2**: Pin 4 được kết nối với LED bên ngoài nối tiếp với 1 điện trở 1kΩ.
 
 Lưu ý:
 - **BTN_ACT**: Trạng thái kích hoạt của nút nhấn là `LOW`.
