@@ -34,7 +34,7 @@ Lưu ý:
 Biên dịch và tải chương trình lên ESP32:
 ```bash
 platformio run --target upload
-
+```
 ## Chức năng nút nhấn
 - Nhấn một lần: Bật hoặc tắt LED hiện tại (mặc định là LED1).
 - Nhấn đúp: Chuyển đổi điều khiển giữa LED1 và LED2.
@@ -44,13 +44,8 @@ platformio run --target upload
 - **OneButton**: Thư viện hỗ trợ các chức năng nút nhấn như nhấn một lần, nhấn đúp và nhấn giữ.
 
 ## Cấu hình trong `platformio.ini`
-[env]
-platform = espressif32
-framework = arduino
-monitor_speed = 115200
-upload_speed = 921600
-lib_deps = mathertel/OneButton@^2.6.1
 
+```
 [env:esp32doit-devkit-v1]
 board = esp32doit-devkit-v1
 build_flags = 
@@ -59,3 +54,4 @@ build_flags =
   '-D LED_PIN=2U'
   '-D LED_PIN_2=4U'
   '-D LED_ACT=HIGH'
+```
